@@ -2,7 +2,7 @@
 
 import hashlib
 import base64
-from Cryptodome.Cipher import AES
+from Crypto.Cipher import AES
 import argparse
 import sys
 
