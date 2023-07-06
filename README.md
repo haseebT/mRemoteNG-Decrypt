@@ -4,8 +4,18 @@ Python script to decrypt passwords stored by mRemoteNG
 
 ### Usage
 
-`python3 mremoteng_decrypt.py -s STRING [-p CUSTOM_PASSWORD]`
+```
+usage: mRemoteNG-Decrypt.py [-h] [-f FILE | -s STRING] [-p PASSWORD] [-w WORDLIST]
 
-OR
+Decrypt mRemoteNG passwords.
 
-`python3 mremoteng_decrypt.py -f FILE [-p CUSTOM_PASSWORD]`
+options:
+  -h, --help            show this help message and exit
+  -f FILE, --file FILE  name of file containing mRemoteNG password
+  -s STRING, --string STRING
+                        base64 string of mRemoteNG password
+  -p PASSWORD, --password PASSWORD
+                        Custom password
+  -w WORDLIST, --wordlist WORDLIST
+                        wordlist file for brute-forcing
+```
